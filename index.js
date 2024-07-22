@@ -19,7 +19,7 @@ async function logArrayInfo(array) {
   console.log("Done!");
 }
 
-// logArrayInfo([1, 2, 3]);
+logArrayInfo([1, 2, 3]);
 
 /// 2
 
@@ -31,6 +31,9 @@ function createCats() {
     };
     cats.push(cat);
   }
+
+  // Переписал while на for
+
   return cats;
 }
 
@@ -78,6 +81,10 @@ function sumValues(obj) {
 
 // функция с помощью рекурсии складывает значения всех value у всех веток children
 
-const totalSum = sumValues(tree);
+let totalSum = sumValues(tree);
+
+if (totalSum % 2 === 0) {
+  alert("Сумма кратна 2");
+}
 
 console.log(totalSum);
