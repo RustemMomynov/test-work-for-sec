@@ -84,7 +84,5 @@ function sumValues(obj) {
 let totalSum = sumValues(tree);
 
 if (totalSum % 2 === 0) {
-  alert("Сумма кратна 2");
+  console.log("Сумма кратна 2");
 }
-
-console.log(totalSum);
